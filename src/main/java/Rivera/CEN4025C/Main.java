@@ -64,7 +64,7 @@ public class Main {
 /*
 
 GitHub:
-Link pending.
+https://github.com/arivera247/CEN_4025C_Module_4
 
 References:
 [1] Profiling with JProfiler, (Jan. 26, 2018). Accessed: Sep. 24, 2023. [Online Video]. Available: https://www.youtube.com/watch?v=LiiZnYbcliw
