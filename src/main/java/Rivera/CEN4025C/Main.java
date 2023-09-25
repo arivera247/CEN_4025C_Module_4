@@ -48,9 +48,20 @@ public class Main {
         for (int i = 0; i <= numLimit; i++)
         {
             myArray.add(randNum.nextInt());
-            System.out.println(myArray); //Simple test to check for array population.
+            //System.out.println("Index: " + i + " Int value added"); //Simple test to check for array population. Array list populates to 2mil.
         }
         //Reference [3],[4]
+
+        //Deleting elements of the ArrayList
+
+        for (int i = 0; i <= myArray.size(); i++)
+        {
+            myArray.remove(i);
+            System.out.println("Index: " + i + " Int value removed" + " Array size: " + myArray.size()); //Simple test to check for array value deletion.
+        }
+        //FIXME - Element deletion stops at 1mil. Removed numLimit var and replaced with array size.
+
+        //Reference [3],[5],[6]
 
         //New method for LinkedList
 
@@ -71,5 +82,7 @@ References:
 [2] JProfiler’s integration into IntelliJ IDEA, (Mar. 23, 2017). Accessed: Sep. 24, 2023. [Online Video]. Available: https://www.youtube.com/watch?v=XTq1VWEDygg
 [3] “ArrayList in Java,” GeeksforGeeks, Oct. 06, 2016. https://www.geeksforgeeks.org/arraylist-in-java/ (accessed Sep. 24, 2023).
 [4] “Generating random numbers in Java,” GeeksforGeeks, Oct. 26, 2016. https://www.geeksforgeeks.org/generating-random-numbers-in-java/ (accessed Sep. 24, 2023).
+[5] “ArrayList and LinkedList remove() methods in Java with Examples,” GeeksforGeeks, Nov. 06, 2016. https://www.geeksforgeeks.org/arraylist-linkedlist-remove-methods-java-examples/ (accessed Sep. 24, 2023).
+[6] codebox, “Answer to ‘Exception in thread “main” java.lang.ArrayIndexOutOfBoundsException: 1000000 at problem2.main(problem2.java:17),’” Stack Overflow, Aug. 17, 2012. https://stackoverflow.com/a/12005428 (accessed Sep. 24, 2023).
 
 */
