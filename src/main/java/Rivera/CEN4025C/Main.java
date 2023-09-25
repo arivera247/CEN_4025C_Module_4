@@ -45,20 +45,22 @@ public class Main {
         ArrayList<Integer> myArray = new ArrayList<Integer>();
 
         //Appending new elements at the end of the list
-        for (int i = 0; i <= numLimit; i++)
+        for (int i = 0; i < numLimit; i++)
         {
             myArray.add(randNum.nextInt());
-            //System.out.println("Index: " + i + " Int value added"); //Simple test to check for array population. Array list populates to 2mil.
+            System.out.println("Index: " + i + " Int value added" + " " + "Array size: " + myArray.size()); //Simple test to check for array population. Array list populates to 2mil.
         }
         //Reference [3],[4]
 
         //Deleting elements of the ArrayList
 
-        for (int i = 0; i <= myArray.size(); i++)
+        /*
+        for (int i = 0; myArray.size() > i ; i++)
         {
             myArray.remove(i);
             System.out.println("Index: " + i + " Int value removed" + " Array size: " + myArray.size()); //Simple test to check for array value deletion.
         }
+        */
         //FIXME - Element deletion stops at 1mil. Removed numLimit var and replaced with array size.
 
         //Reference [3],[5],[6]
