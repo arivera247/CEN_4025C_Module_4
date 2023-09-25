@@ -1,31 +1,5 @@
 package Rivera.CEN4025C;
 
-/*
-Instructions:
-
-After viewing the tutorials mentioned in the Learning Materials page on JProfiler. Use it to profile the following program:
-Description:
-
-Write a Java application that does the following. The Main method should:
-
-Call a new method which adds 2,000,000 random integers into an ArrayList, then deletes each one from the ArrayList (Done)
-
-Call a new method which adds 2,000,000 random integers into a LinkedList, then deletes each one from the LinkedList (Done)
-
-Call a new method which adds 2,000,000 random integers into a Hashtable, then deletes each one from the Hashtable (Done)
-Help with Assignment:
-
-See our free Valencia tutoring option: Tutoring Options
-Submission:
-
-PDF document.  This PDF will contain your source code and a couple of screen shots showing your program in action pasted into the document.
-
-The screen shots of the profiler will include, showing the relative performance of each of the collection classes
-
-You will have to include the answer this question: Which method had the longest runtime?
-
- */
-
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.LinkedList;
