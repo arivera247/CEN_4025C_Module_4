@@ -32,31 +32,35 @@ import java.util.Random;
 //Prerequisites: Before writing the code below, I installed JProfiler 14.0 as discussed in the Profiling with JProfiler [1] and JProfiler’s integration into IntelliJ IDEA [2] videos.
 public class Main {
     public static void main(String[] args)
-    {
-        //New upper limit integer variable for data structures
-        int numLimit = 2000;
+        {
+        arrayListMethod();
+        linkedListMethod();
+        hashtableMethod();
+        }
 
+    public static void arrayListMethod() {
+        //New method for ArrayList
+
+        //Declaring the ArrayList
+        ArrayList<Integer> myArray = new ArrayList<Integer>();
         //New method for random integers
         Random randNum = new Random();
         //Reference [4]
 
-        //New method for ArrayList
-        //Declaring the ArrayList
-        ArrayList<Integer> myArray = new ArrayList<Integer>();
+        //New upper limit integer variable for data structures
+        int numLimit = 2000;
 
         //Appending new elements at the end of the list
-        for (int i = 0; i < numLimit; i++)
-        {
+        for (int i = 0; i < numLimit; i++) {
             myArray.add(randNum.nextInt());
             //System.out.println("Index: " + i + " Int value added" + " " + "Array size: " + myArray.size()); //Simple test to check for array population. Array list populates to 2mil.
         }
         //Reference [3],[4]
 
         //Deleting elements of the ArrayList
-        for (int i = numLimit -1; myArray.size() > 0; i--)
-        {
+        for (int i = numLimit - 1; myArray.size() > 0; i--) {
             myArray.remove(i);
-            System.out.println("Index: " + i + " | Int value removed" + " | Array size: " + myArray.size() + " | Array value: " + myArray); //Simple test to check for array value deletion.
+            //System.out.println("Index: " + i + " | Int value removed" + " | Array size: " + myArray.size() + " | Array value: " + myArray); //Simple test to check for array value deletion.
         }
 
         //FIXME - Element deletion stops at 1mil, when index and array size matches. Removed numLimit var and replaced with array size. (Resolved)
@@ -64,12 +68,16 @@ public class Main {
         //FIXME - reduced numLimit from 2000000 to 2000 for troubleshooting.
 
         //Reference [3],[5],[6]
-
-        //New method for LinkedList
-
-        //New method for Hashtable
-
     }
+
+    public static void linkedListMethod() {
+        System.out.println("Sample code.");
+    }
+
+    public static void hashtableMethod() {
+        System.out.println("Sample code.");
+    }
+
 }
 
 
