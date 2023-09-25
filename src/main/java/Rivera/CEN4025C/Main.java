@@ -34,7 +34,7 @@ public class Main {
     public static void main(String[] args)
     {
         //New upper limit integer variable for data structures
-        int numLimit = 2000000;
+        int numLimit = 2000;
 
         //New method for random integers
         Random randNum = new Random();
@@ -48,20 +48,20 @@ public class Main {
         for (int i = 0; i < numLimit; i++)
         {
             myArray.add(randNum.nextInt());
-            System.out.println("Index: " + i + " Int value added" + " " + "Array size: " + myArray.size()); //Simple test to check for array population. Array list populates to 2mil.
+            //System.out.println("Index: " + i + " Int value added" + " " + "Array size: " + myArray.size()); //Simple test to check for array population. Array list populates to 2mil.
         }
         //Reference [3],[4]
 
         //Deleting elements of the ArrayList
-
-        /*
-        for (int i = 0; myArray.size() > i ; i++)
+        for (int i = numLimit -1; myArray.size() > 0; i--)
         {
             myArray.remove(i);
-            System.out.println("Index: " + i + " Int value removed" + " Array size: " + myArray.size()); //Simple test to check for array value deletion.
+            System.out.println("Index: " + i + " | Int value removed" + " | Array size: " + myArray.size() + " | Array value: " + myArray); //Simple test to check for array value deletion.
         }
-        */
-        //FIXME - Element deletion stops at 1mil. Removed numLimit var and replaced with array size.
+
+        //FIXME - Element deletion stops at 1mil, when index and array size matches. Removed numLimit var and replaced with array size. (Resolved)
+        //Resolution: Index must be within bounds of array. Reduced index value by 1 and changed condition statement to match.
+        //FIXME - reduced numLimit from 2000000 to 2000 for troubleshooting.
 
         //Reference [3],[5],[6]
 
