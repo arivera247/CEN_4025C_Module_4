@@ -61,14 +61,14 @@ public class Main {
         //Appending new elements at the end of the list
         for (int i = 0; i < numLimit; i++) {
             myArray.add(randNum.nextInt());
-            System.out.println("Index: " + i + " Int value added" + " " + "Array size: " + myArray.size()); //Simple test to check for array population. Array list populates to 2mil.
+            //System.out.println("Index: " + i + " Int value added" + " " + "Array size: " + myArray.size()); //Simple test to check for array population. Array list populates to 2mil.
         }
         //Reference [3],[4]
 
         //Deleting elements of the ArrayList
         for (int i = numLimit - 1; myArray.size() > 0; i--) {
             myArray.remove(i);
-            System.out.println("Index: " + i + " | Int value removed" + " | Array size: " + myArray.size() + " | Array value: " + myArray); //Simple test to check for array value deletion.
+            //System.out.println("Index: " + i + " | Int value removed" + " | Array size: " + myArray.size() + " | Array value: " + myArray); //Simple test to check for array value deletion.
         }
 
         //FIXME - Element deletion stops at 1mil, when index and array size matches. Removed numLimit var and replaced with array size. (Resolved)
@@ -95,14 +95,14 @@ public class Main {
         //Appending new elements at the end of the list
         for (int i = 0; i < numLimit; i++) {
             myLinkedList.add(randNum.nextInt());
-            System.out.println("Index: " + i + " Int value added" + " " + "LinkedList size: " + myLinkedList.size()); //Simple test to check for LinkedList population.
+            //System.out.println("Index: " + i + " Int value added" + " " + "LinkedList size: " + myLinkedList.size()); //Simple test to check for LinkedList population.
         }
         //Reference [4],[7]
 
         //Deleting elements of the ArrayList
         for (int i = numLimit - 1; myLinkedList.size() > 0; i--) {
             myLinkedList.remove(i);
-            System.out.println("Index: " + i + " | Int value removed" + " | LinkedList size: " + myLinkedList.size() + " | LinkedList value: " + myLinkedList); //Simple test to check for LinkedList value deletion.
+            //System.out.println("Index: " + i + " | Int value removed" + " | LinkedList size: " + myLinkedList.size() + " | LinkedList value: " + myLinkedList); //Simple test to check for LinkedList value deletion.
         }
         //Reference [5]
     }
@@ -123,14 +123,14 @@ public class Main {
         //Appending new elements at the end of the Hashtable
         for (int i = 0; i < numLimit; i++) {
             myHashtable.put(i, randNum.nextInt());
-            System.out.println("Index: " + i + " Int value added" + " " + "Array size: " + myHashtable.size()); //Simple test to check for Hashtable population.
+            //System.out.println("Index: " + i + " Int value added" + " " + "Array size: " + myHashtable.size()); //Simple test to check for Hashtable population.
         }
         //Reference [4],[8]
 
         //Deleting elements of the Hashtable
         for (int i = numLimit - 1; myHashtable.size() > 0; i--) {
             myHashtable.remove(i);
-            System.out.println("Index: " + i + " | Int value removed" + " | Hashtable size: " + myHashtable.size() + " | Hashtable value: " + myHashtable); //Simple test to check for LinkedList value deletion.
+            //System.out.println("Index: " + i + " | Int value removed" + " | Hashtable size: " + myHashtable.size() + " | Hashtable value: " + myHashtable); //Simple test to check for LinkedList value deletion.
         }
         //Reference [8]
     }
